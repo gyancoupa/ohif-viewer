@@ -11,9 +11,9 @@
         "thumbnailRendering": "wadors",
         "requestOptions": {
           "auth": "admin:admin",
-          "logRequests": true,
+          "logRequests": false,
           "logResponses": false,
-          "logTiming": true
+          "logTiming": false
         }
     }],
     "dimse": [{
@@ -47,8 +47,13 @@
   "public": {
     "verifyEmail": false,
     "ui": {
+        "leftSidebarOpen": false,
+        "displaySetNavigationLoopOverSeries": false,
+        "displaySetNavigationMultipleViewports": true,
+        "autoPositionMeasurementsTextCallOuts": "TRLB",
         "studyListFunctionsEnabled": true,
-        "studyListDateFilterNumDays": 1
+        "studyListDateFilterNumDays": 10000,
+	"showStackLoadingProgressBar": true
     }
   }
 }

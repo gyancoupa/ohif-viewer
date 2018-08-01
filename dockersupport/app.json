@@ -6,36 +6,44 @@
     "merge_logs"  : true,
     "cwd"         : "/app/bundle/",
     "env": {
-    	"METEOR_SETTINGS": {
-		  "servers": {
-		    "dicomWeb": [
-					{
-		        "name": "Orthanc",
-		        "wadoUriRoot": "http://pacsIP:8042/wado",
-		        "qidoRoot": "http://pacsIP:8042/dicom-web",
-		        "wadoRoot": "http://pacsIP:8042/dicom-web",
-		        "qidoSupportsIncludeField": false,
-		        "imageRendering": "wadouri",
-		        "thumbnailRendering": "wadouri",
-		        "requestOptions": {
-		          "auth": "orthanc:orthanc",
-		          "logRequests": true,
-		          "logResponses": false,
-		          "logTiming": true
-		        }
+      "METEOR_SETTINGS": {
+		"servers": {
+		  "dicomWeb": [
+		    {
+		      "name": "Dcm4chee",
+		      "wadoUriRoot": "http://dcm4chee_arc_1:8080/dcm4chee-arc/aets/DCM4CHEE/wado",
+		      "qidoRoot": "http://dcm4chee_arc_1:8080/dcm4chee-arc/aets/DCM4CHEE/rs",
+		      "wadoRoot": "http://dcm4chee_arc_1:8080/dcm4chee-arc/aets/DCM4CHEE/rs",
+		      "qidoSupportsIncludeField": false,
+		      "imageRendering": "wadouri",
+		      "thumbnailRendering": "wadors",
+		      "requestOptions": {
+			"auth": "admin:admin",
+			"logRequests": false,
+			"logResponses": false,
+			"logTiming": false
 		      }
-		    ]
-		  },
-		  "defaultServiceType": "dicomWeb",
+		    }
+		  ]
+		},
+		"defaultServiceType": "dicomWeb",
 		  "public": {
-				"ui": {
-					"studyListDateFilterNumDays": 1
-				}
-			},
-		  "proxy": {
-		    "enabled": true
-		  }
+		    "verifyEmail": false,
+		    "ui": {
+			"leftSidebarOpen": false,
+			"displaySetNavigationLoopOverSeries": false,
+			"displaySetNavigationMultipleViewports": true,
+			"autoPositionMeasurementsTextCallOuts": "TRLB",
+			"studyListFunctionsEnabled": true,
+			"studyListDateFilterNumDays": 10000,
+			"showStackLoadingProgressBar": true
+		    }
+		  },
+
+		"proxy": {
+		  "enabled": true
 		}
+      }
     }
   }]
 }
