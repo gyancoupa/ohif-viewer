@@ -35,7 +35,7 @@
 			"displaySetNavigationMultipleViewports": true,
 			"autoPositionMeasurementsTextCallOuts": "TRLB",
 			"studyListFunctionsEnabled": true,
-			"studyListDateFilterNumDays": 10000,
+			"studyListDateFilterNumDays": 20000,
 			"showStackLoadingProgressBar": true
 		    }
 		  },
