@@ -67,6 +67,8 @@ services:
       - arc
     environment:
       - MONGO_URL=mongodb://mongo:27017/ohif
+#      - HTTP_FORWARDED_COUNT=2
+      - DISABLE_WEBSOCKETS=1
 #    extra_hosts:
 #      - "pacsIP:172.18.0.4"
     volumes:
