@@ -66,7 +66,7 @@ services:
       - mongo
       - arc
     environment:
-      - MONGO_URL=mongodb://mongo:27017/ohif
+#      - MONGO_URL=mongodb://mongo:27017/ohif
 #      - HTTP_FORWARDED_COUNT=2
       - DISABLE_WEBSOCKETS=1
 #    extra_hosts:
