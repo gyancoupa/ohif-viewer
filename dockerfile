@@ -27,9 +27,9 @@ WORKDIR /home/user/Viewers/OHIFViewer
 ENV METEOR_PACKAGE_DIRS=../Packages
 ENV METEOR_PROFILE=1
 RUN meteor npm install
-RUN meteor build --directory /home/user/app
+RUN meteor build --debug --directory /home/user/app
 WORKDIR /home/user/app/bundle/programs/server
-RUN npm install --production
+RUN npm install
 
 # Second stage of multi-stage build
 # Creates a slim production image for the node.js application
