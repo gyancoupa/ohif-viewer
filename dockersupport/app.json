@@ -34,7 +34,7 @@
 			"displaySetNavigationLoopOverSeries": false,
 			"displaySetNavigationMultipleViewports": true,
 			"autoPositionMeasurementsTextCallOuts": "TRLB",
-			"studyListFunctionsEnabled": true,
+			"studyListFunctionsEnabled": false,
 			"studyListDateFilterNumDays": 20000,
 			"showStackLoadingProgressBar": true
 		    }
