@@ -30,7 +30,7 @@
 		  "public": {
 		    "verifyEmail": false,
 		    "ui": {
-			"leftSidebarOpen": false,
+			"leftSidebarOpen": true,
 			"displaySetNavigationLoopOverSeries": false,
 			"displaySetNavigationMultipleViewports": true,
 			"autoPositionMeasurementsTextCallOuts": "TRLB",
