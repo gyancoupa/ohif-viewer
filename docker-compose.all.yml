@@ -54,12 +54,12 @@ services:
       - /mnt/disks/dicom-db/dcm4chee-arc/storage:/storage
 
   mongo:
-    image: "mongo:latest"
+    image: "mongo:4.0.3-xenial"
     ports:
       - "27017:27017"
 
   viewer:
-    image: isb-cgc/ohif-viewer:latest
+    image: gcr.io/isb-cgc/ohif-viewer:1.0
     ports:
       - "3000:3000"
     links:
