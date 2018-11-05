@@ -59,7 +59,7 @@ services:
       - "27017:27017"
 
   viewer:
-    image: gcr.io/isb-cgc/ohif-viewer:1.0
+    image: gcr.io/${PROJECT}/ohif-viewer:1.0
     ports:
       - "3000:3000"
     links:
