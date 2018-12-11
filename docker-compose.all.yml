@@ -26,7 +26,7 @@ services:
     volumes:
       - /etc/localtime:/etc/localtime:ro
       - /etc/timezone:/etc/timezone:ro
-      - /mnt/disks/dicom-index/db:/var/lib/postgresql/data
+      - /mnt/disks/dicom-db/dcm4chee-arc/db:/var/lib/postgresql/data
   arc:
     image: dcm4che/dcm4chee-arc-psql:5.13.1
     logging:
