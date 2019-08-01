@@ -1,3 +1,5 @@
+# Note: The isb-cgc webapp uses the ohif-d4c branch.
+
 # Viewers
 This repo contains the OHIF DICOM Viewer and Lesion Tracker, and various shared meteor packages.
 
